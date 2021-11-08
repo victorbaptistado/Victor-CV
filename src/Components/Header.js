@@ -22,8 +22,11 @@ const Header = () => {
 
 
         <div className="headContainer2">
-        <h2>"Um puta homem..."</h2>
-        <br/><br/><br/>
+        <div className="aboutMeHeader">
+        <h2>&lt;h1&gt;I'm a Web Development student!&lt;h1&gt;</h2>
+        <p>&lt;p&gt;Filling lines of codes on my daily life. &lt;p&gt;</p>
+        </div>
+
         <h1 className="profileName">VICTOR BAPTISTA</h1> 
 
         <div className="iconsRow">
