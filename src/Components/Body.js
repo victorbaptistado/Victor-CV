@@ -6,13 +6,17 @@ import phoneIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Imag
 import emailIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/email.png";
 import locationIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/location-pin.png";
 import { useState } from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMinusCircle, faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 
 const Body = () => {
 
 
 
-const [contact, setstate] = useState([
+const [noContact, setVisible] = useState("")
+
+const contact =
+[
 {
     phone:    
     <div className="contactContainer">
@@ -32,13 +36,29 @@ const [contact, setstate] = useState([
     <img className="contactIcon" src={locationIcon}/><h2><span>United Kingdom, London</span></h2>
     </div>
 }
-]);
+];
+
+
+const visible = () =>
+setVisible (
+    contact.map(contact=> 
+  
+    <ul>
+    
+    {contact.phone}
+    {contact.email}
+   {contact.location}
+    
+    </ul>       
+))
+
+
 
     return (
-        <div className="bodyWrapper">
+        <div className="bodyWrapper"> 
         
         
-            <div className="bodyContainer1">
+            <div className="bodyContainer1" >
             <nav>
             <ul>
             <a href="#aboutMe"><li className="buttons"><b>ABOUT ME</b></li></a>
@@ -50,22 +70,36 @@ const [contact, setstate] = useState([
 
             <div className="contactsWrapper">
 
-        {contact.map(contact=>    
-            <ul>
-    
-            {contact.phone}
-            {contact.email}
-           {contact.location}
-          
-            </ul>     
-            
-        )}
+
+
+        <p>Contact Info</p>
+        
+
+        {noContact ? 
+        <div>
+        <button onClick={() => setVisible("")}> 
+      
+        <FontAwesomeIcon icon={faMinusCircle} style={{color: "black"}}/>
+        </button>
+        </div>
+        :
+        <div> 
+        <button onClick={() => visible()}> 
+        <FontAwesomeIcon icon={faPlusCircle} style={{color: "black"}}/>
+        </button>
+        </div>
+        
+        }      
+        
+        {noContact}
+        
+      
            </div>
-      </div>
+        </div>
 
 
       
-            <div className="bodyContainer2">
+            <div className="bodyContainer2" onClick={() => setVisible("")}>
                <div className="sessionContainer">
                <AboutMe id="aboutMe" title={"About"}/>
                </div>
