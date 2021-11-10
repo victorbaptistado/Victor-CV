@@ -47,7 +47,7 @@ setVisible (
     
     {contact.phone}
     {contact.email}
-   {contact.location}
+    {contact.location}
     
     </ul>       
 ))
