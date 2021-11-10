@@ -84,6 +84,7 @@ You can check my github on the icon below:
             <p>{text.react}</p>
             <p>{text.htmlcss}</p>
             <p>{text.adobe}</p>
+            <br/>
             <p>{text.github}</p>
             <br/><br/>
             </div>

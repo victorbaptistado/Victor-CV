@@ -11,12 +11,13 @@ const Projects = ({id, title}) => {
     
 const [texts, setText] = useState([
     {
-    about: `My most recent project is a software on Self-Development.
-I'm using Html, Css & Javascript React.
-A series of challenges to make the user learn by the best way: concepts & practice.
+    about:<>{`One thing I'm very interested about is Personal Development; in other words: becoming the best you can become.  
+Therefore, my most recent project is a software on Self-Development.
 
-It's on a beta phase. `
+In there I suggest series of challenges to make the user learn by the best way: concept & practice.
 
+I'm using Html, Css & Javascript React. It's on a beta phase. 
+You can find the git repository for it here: `}<a target="_blank" href="https://github.com/victorbaptistado/One-Soul-App-React"><span >one soul academy</span></a></>
 },
 {
     two: `test`
