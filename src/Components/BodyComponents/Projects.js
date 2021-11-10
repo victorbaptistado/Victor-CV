@@ -12,6 +12,7 @@ const Projects = ({id, title}) => {
 const [texts, setText] = useState([
     {
     about: `My most recent project is a software on Self-Development.
+I'm using Html, Css & Javascript React.
 A series of challenges to make the user learn by the best way: concepts & practice.
 
 It's on a beta phase. `

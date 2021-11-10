@@ -22,7 +22,7 @@ I'm a Web Developer student.`
     </>},
     {
     hobbies: <><FontAwesomeIcon icon={faUmbrellaBeach} style={{color:"deepskyblue"}}/>
-    {` A list of some of my hobbies: Reading, Writing, Singing, Guitar, Yoga... `}
+    {` A list of some of my hobbies: Reading, Writing, Singing, Guitar, Acting, Directing, Meditation, Yoga... `}
     </>
     }
 

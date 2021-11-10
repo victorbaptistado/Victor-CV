@@ -101,13 +101,13 @@ setVisible (
       
             <div className="bodyContainer2" onClick={() => setVisible("")}>
                <div className="sessionContainer">
-               <AboutMe id="aboutMe" title={"About"}/>
+               <AboutMe id="aboutMe" title={"ABOUT"}/>
                </div>
                <div className="sessionContainer">
-               <Tools id="tools" title={"Tools"}/>
+               <Tools id="tools" title={"TOOLS"}/>
                </div>
                <div className="sessionContainer">
-               <Projects id="projects" title={"Projects"}/>           
+               <Projects id="projects" title={"PROJECTS"}/>           
                </div>
 
             </div>

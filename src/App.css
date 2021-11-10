@@ -29,6 +29,12 @@ h2 {
   color: white;
 }
 
+h3 {
+  color: silver;
+
+  width: fit-content;
+}
+
 nav {
   margin-left: 10%;
 }
@@ -87,6 +93,10 @@ span {
   background-color: teal;
   color: #d2bdff;
   transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+iframe {
+  border-radius: 5%;
 }
 
 /* ---- DIV ----  */
