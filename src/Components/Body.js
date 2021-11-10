@@ -4,6 +4,7 @@ import Projects from "./BodyComponents/Projects"
 import AboutMe from "./BodyComponents/AboutMe"
 import phoneIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/phone-call.png";
 import emailIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/email.png";
+import githubIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/github-1.png";
 import locationIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/location-pin.png";
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -35,6 +36,12 @@ const contact =
     <div className="contactContainer">
     <img className="contactIcon" src={locationIcon}/><h2><span>United Kingdom, London</span></h2>
     </div>
+},
+{
+    github: 
+    <div className="contactContainer">
+    <img className="contactIcon" src={githubIcon}/><a target="_blank" href="https://github.com/victorbaptistado"><h2><span> /victorbaptistado</span></h2></a>
+    </div>
 }
 ];
 
@@ -48,6 +55,7 @@ setVisible (
     {contact.phone}
     {contact.email}
     {contact.location}
+    {contact.github}
     
     </ul>       
 ))

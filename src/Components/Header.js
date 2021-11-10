@@ -6,7 +6,7 @@ import htmlIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image
 import cssIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/css3-icon.png";
 import adobePremiereIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/adobe-premiere-icon.jpg";
 import adobePhotoshopIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/adobe-photoshop-icon.png";
-
+import gitHubIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/github-icon.png";
 
 const Header = () => {
     return (
@@ -36,6 +36,7 @@ const Header = () => {
         <img className="toolIcon" src={cssIcon}></img>
         <img className="toolIcon" src={adobePremiereIcon}></img>
         <img className="toolIcon" src={adobePhotoshopIcon}></img>
+        <img className="toolIcon" src={gitHubIcon}></img>
         </div>
         </div>
 

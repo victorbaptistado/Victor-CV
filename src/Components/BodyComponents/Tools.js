@@ -6,7 +6,8 @@ import htmlIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image
 import cssIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/css3-icon.png";
 import adobePremiereIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/adobe-premiere-icon.jpg";
 import adobePhotoshopIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/adobe-photoshop-icon.png";
-import { text } from '@fortawesome/fontawesome-svg-core';
+import githubIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/github-icon.png";
+import githubIcon2 from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/github-icon2.png";
 
 
 const Tools = ({id, title}) => {
@@ -23,6 +24,7 @@ const Tools = ({id, title}) => {
     <img className="toolIcon" src={cssIcon}></img>
     <img className="toolIcon" src={adobePremiereIcon}></img>
     <img className="toolIcon" src={adobePhotoshopIcon}></img>
+    <img className="toolIcon" src={githubIcon}></img>
     </div>
     </>
     },
@@ -53,7 +55,18 @@ Bellow is a piece I worked in audio recording & mixing, video recording & editin
     src="https://www.youtube.com/embed/jxDCql_NcoI">
     </iframe>
     </>
-    }
+    },
+    {
+    github: 
+    <>
+    <h3>Github</h3>
+    {`Git hub is the version control software I use for managing my projects.
+You can check my github on the icon below:
+`} 
+    <a href="https://github.com/victorbaptistado" target="_blank"><img width="50px"  src={githubIcon2}/></a>
+    
+</>
+        }
     
     ]);
     
@@ -71,6 +84,7 @@ Bellow is a piece I worked in audio recording & mixing, video recording & editin
             <p>{text.react}</p>
             <p>{text.htmlcss}</p>
             <p>{text.adobe}</p>
+            <p>{text.github}</p>
             <br/><br/>
             </div>
             )}
