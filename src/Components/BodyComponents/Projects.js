@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-
+import onesoulIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/one-soul-icon.png";
 
 
 
@@ -17,7 +17,9 @@ Therefore, my most recent project is a software on Self-Development.
 In there I suggest series of challenges to make the user learn by the best way: concept & practice.
 
 I'm using Html, Css & Javascript React. It's on a beta phase. 
-You can find the git repository for it here: `}<a target="_blank" href="https://github.com/victorbaptistado/One-Soul-App-React"><span >one soul academy</span></a></>
+You can find the git repository on the icon below: `}
+<br/>
+<a target="_blank" href="https://github.com/victorbaptistado/One-Soul-App-React"><img width="50px" src={onesoulIcon}/></a></>
 },
 {
     two: `test`

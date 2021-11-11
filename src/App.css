@@ -113,11 +113,13 @@ iframe {
 
 .headerWrapper {
   /* background-image: url("C:/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/header-image.png");*/
+
   background-size: cover;
   background-color: rgb(0, 0, 19);
   display: grid;
   grid-template-columns: 30% 70%;
-  height: 62vh;
+
+  height: fit-content;
 }
 
 .headContainer1 {
@@ -134,11 +136,11 @@ iframe {
 
 .bodyWrapper {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 22% 78%;
 }
 
 .bodyContainer1 {
-  margin: 10% 0% 0% 5%;
+  margin: 10% 0% 0% 1%;
   position: sticky;
 }
 
@@ -172,7 +174,8 @@ iframe {
 }
 
 .bodyContainer2 {
-  margin: 3% 19% 0% 3%;
+  margin: 3% 2% 0% 3%;
+  width: fit-content;
   background-color: rgba(71, 83, 194, 0.103);
   border-style: groove;
   border-width: 0.09cm;
