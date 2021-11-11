@@ -80,7 +80,7 @@ setVisible (
 
 
 
-        <p>Contact Info</p>
+        <p style={{fontSize:"1.5rem", width:"fit-content", height:"auto"}}>Contact Info</p>
         
 
         {noContact ? 
