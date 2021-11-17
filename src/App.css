@@ -183,7 +183,7 @@ iframe {
 
 .column {
   display: flex;
-  margin-right: 2%;
+  margin-right: 0%;
 }
 
 .sessionContainer {
@@ -197,6 +197,12 @@ iframe {
   min-width: 19rem;
   width: 96%;
   height: auto;
+}
+
+.oneSoulAppImage {
+  width: 40%;
+  height: fit-content;
+  margin-left: 3%;
 }
 
 .toolIcon {

@@ -17,7 +17,7 @@ Therefore, my most recent project is a software on Self-Development.
 In there I suggest series of challenges to make the user learn by the best way: concept & practice.
 
 I'm using Html, Css & Javascript React. It's on a beta phase. 
-You can access try the Demo version of the app on the icon below: `}
+You can try the app clicking the icon below: `}
     <br/>
 <a target="_blank" href="https://one-soul-academy.netlify.app/">
 <img width="50px" src={onesoulIcon}/></a></>
@@ -38,8 +38,8 @@ You can access try the Demo version of the app on the icon below: `}
 
             {texts.map(text =>
             <div className="column">
-            <p style={{marginRight:"5%"}}>{text.about}</p>
-            <img src={oneSoulAppImage}/>
+            <p>{text.about}</p>
+            <img className="oneSoulAppImage" src={oneSoulAppImage}/>
             <br/>
             </div>
             )}
