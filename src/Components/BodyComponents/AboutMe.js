@@ -13,16 +13,16 @@ const [texts, setText] = useState([
 I'm a Web Developer student.`
     },
     {
-    currently: <><FontAwesomeIcon icon={faPlay} style={{color: "green"}}/>
-    {` I'm currently developing my own application on Self-Development.`}
+    currently: <><FontAwesomeIcon className="aboutIcon" icon={faPlay} style={{color: "green"}}/>
+ I'm currently developing my own application on Self-Development.
     </>},
     {
-    objective: <><FontAwesomeIcon icon={faBullseye} style={{color: "red"}}/>
-    {` I'm looking foward to collaborate on a project and to be part of an exciting, challenging team that can help me to develop my skills.`}
+    objective: <><FontAwesomeIcon className="aboutIcon" icon={faBullseye} style={{color: "red"}}/>
+I'm looking foward to collaborate on a project and to be part of an exciting, challenging team that can help me to develop my skills.
     </>},
     {
-    hobbies: <><FontAwesomeIcon icon={faUmbrellaBeach} style={{color:"deepskyblue"}}/>
-    {` A list of some of my hobbies: Reading, Writing, Singing, Guitar, Acting, Directing, Meditation, Yoga... `}
+    hobbies: <><FontAwesomeIcon className="aboutIcon" icon={faUmbrellaBeach} style={{color:"deepskyblue"}}/>
+A list of some of my hobbies: Reading, Writing, Singing, Guitar, Acting, Directing, Meditation, Yoga...
     </>
     }
 

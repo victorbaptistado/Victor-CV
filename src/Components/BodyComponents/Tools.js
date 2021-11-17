@@ -15,7 +15,8 @@ const Tools = ({id, title}) => {
     
     const [texts, setText] = useState([
     {
-    about: <>{` Some tools I'm currently familiar with: `}
+    about: <>
+    <p>Some tools I'm currently familiar with:</p>
     <br/><br/>
     <div className="iconsRow">
     <img className="toolIcon" src={reactIcon}></img>
@@ -32,24 +33,24 @@ const Tools = ({id, title}) => {
     react: 
     <>
     <h3>React</h3>
-    {`React is the Javascript library I'm currently using. 
-I use hooks to alter states, creating dynamic websites.`}
+    <p>React is the Javascript library I'm currently using. 
+    I use hooks to alter states, creating dynamic websites.</p>
     </>
     },
     {
     htmlcss: 
     <>
     <h3>Html & Css</h3>
-    {`With Html & Css I can create beautiful & responsive websites. 
-This website was made entirely by me without use of any html/css templates.`}
+    <p>With Html & Css I can create beautiful & responsive websites. 
+This website was made entirely by me without use of any html/css templates.</p>
     </>
     },
     {
     adobe: 
     <>
     <h3>Adobe Premiere / Photoshop</h3>
-    {`These are tools that I'm very familiar with, since my hobbies head towards audio-visual.
-Bellow is a piece I worked in audio recording & mixing, video recording & editing (using Adobe Premiere):`}
+    <p>These are tools that I'm very familiar with, since my hobbies head towards audio-visual.
+Bellow is a piece I worked in audio recording & mixing, video recording & editing (using Adobe Premiere):</p>
     <br/><br/>
     <iframe width="100%" height="315" 
     src="https://www.youtube.com/embed/jxDCql_NcoI">
@@ -60,9 +61,8 @@ Bellow is a piece I worked in audio recording & mixing, video recording & editin
     github: 
     <>
     <h3>Github</h3>
-    {`Git hub is the version control software I use for managing my projects.
-You can check my github on the icon below:
-`} 
+    <p>Git hub is the version control software I use for managing my projects.
+You can check my github on the icon below:</p>
     <a href="https://github.com/victorbaptistado" target="_blank"><img width="50px"  src={githubIcon2}/></a>
     
 </>
@@ -79,13 +79,12 @@ You can check my github on the icon below:
     
             {texts.map(text =>
             <div>
-            <p>{text.about}</p>
-           
-            <p>{text.react}</p>
-            <p>{text.htmlcss}</p>
-            <p>{text.adobe}</p>
+            {text.about}
+            {text.react}
+            {text.htmlcss}
+            {text.adobe}
             <br/>
-            <p>{text.github}</p>
+            {text.github}
             <br/><br/>
             </div>
             )}
