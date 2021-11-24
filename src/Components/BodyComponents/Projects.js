@@ -37,11 +37,12 @@ You can try the app clicking the icon below: `}
             <br/><br/>
 
             {texts.map(text =>
-            <div className="column">
-            <p>{text.about}</p>
+            <>
             <img className="oneSoulAppImage" src={oneSoulAppImage}/>
+            <p >{text.about}</p>
+
             <br/>
-            </div>
+            </>
             )}
              </div>
         

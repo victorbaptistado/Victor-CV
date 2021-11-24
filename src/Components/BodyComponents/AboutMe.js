@@ -18,7 +18,7 @@ I'm a Web Developer student.`
     </>},
     {
     objective: <><FontAwesomeIcon className="aboutIcon" icon={faBullseye} style={{color: "red"}}/>
-I'm looking foward to collaborate on a project and to be part of an exciting, challenging team that can help me to develop my skills.
+I'm looking forward to collaborate on a project and to be part of an exciting, challenging team that can help me to develop my skills.
     </>},
     {
     hobbies: <><FontAwesomeIcon className="aboutIcon" icon={faUmbrellaBeach} style={{color:"deepskyblue"}}/>

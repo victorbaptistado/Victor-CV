@@ -200,9 +200,13 @@ iframe {
 }
 
 .oneSoulAppImage {
+  float: right;
   width: 40%;
   height: fit-content;
-  margin-left: 3%;
+  shape-outside: circle(90%);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 4%;
 }
 
 .toolIcon {
