@@ -73,7 +73,7 @@ You can check my github on the icon below:</p>
     
     
     return (
-        <div id={id}>
+        <div className="sessionContainer" id={id}>
             <h1>{title}</h1>
             <br/><br/>
     
@@ -88,6 +88,8 @@ You can check my github on the icon below:</p>
             <br/><br/>
             </div>
             )}
+            <br/>
+            <hr/>
             </div>
             
         )

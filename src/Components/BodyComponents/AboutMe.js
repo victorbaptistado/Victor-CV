@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState } from 'react';
+import {React, useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBullseye,faUmbrellaBeach, faPlay } from '@fortawesome/free-solid-svg-icons';
 
@@ -32,8 +31,8 @@ A list of some of my hobbies: Reading, Writing, Singing, Guitar, Acting, Directi
 
 
 
-    return (
-        <div id={id}>
+    return ( 
+        <div className="sessionContainer" id={id}>
             <h1>{title}</h1>
             <br/><br/>
 
@@ -45,10 +44,12 @@ A list of some of my hobbies: Reading, Writing, Singing, Guitar, Acting, Directi
             <p>{text.objective}</p>
             <p>{text.hobbies}</p>
             <br/><br/><br/>
-  
+      
             </div>
             )}
-             </div>
+                  <br/>
+               <hr/>
+        </div>
         
     )
 }

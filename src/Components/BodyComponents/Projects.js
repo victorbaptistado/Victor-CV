@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import {React, useState} from 'react';
 import onesoulIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/one-soul-icon.png";
 import oneSoulAppImage from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/one-soul-app-image.PNG";
 
@@ -32,7 +31,7 @@ You can try the app clicking the icon below: `}
 
 
     return (
-        <div id={id}>
+        <div className="sessionContainer" id={id}>
             <h1>{title}</h1>
             <br/><br/>
 
