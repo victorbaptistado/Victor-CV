@@ -52,9 +52,7 @@ This website was made entirely by me without use of any html/css templates.</p>
     <p>These are tools that I'm very familiar with, since my hobbies head towards audio-visual.
 Bellow is a piece I worked in audio recording & mixing, video recording & editing (using Adobe Premiere):</p>
     <br/><br/>
-    <iframe width="100%" height="315" 
-    src="https://www.youtube.com/embed/jxDCql_NcoI">
-    </iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jxDCql_NcoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </>
     },
     {

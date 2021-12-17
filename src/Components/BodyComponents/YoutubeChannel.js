@@ -9,11 +9,9 @@ const YoutubeChannel = ({id, title}) => {
         about:<>{`I started my youtube channel on JS, React & other technologies. 
 That's a way I found to expose my thoughts, to solidify my knowledge, and a database (kind of a diary) 
 to watch my progress - a way to remember how did I solve some issues. At the same time it may be
-helpfull for others:`}
+helpfull to others:`}
         <br/><br/>
-        <iframe width="100%" height="315" 
-    src="https://www.youtube.com/watch?v=IBVFA6JOIPw">
-    </iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IBVFA6JOIPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </>
     },
     
