@@ -17,7 +17,7 @@ const Body = () => {
      
                 <nav>
                 <ul>
-                <a href="#aboutMe"><li className="buttons"><b>ABOUT ME</b></li></a>
+                <a href="#aboutMe"><li className="buttons"><b>ABOUT ME (TEST)</b></li></a>
                 <a href="#tools"><li className="buttons"><b>TOOLS</b></li></a>
                 <a href="#projects"><li className="buttons"><b>PROJECTS</b></li></a>
                 </ul>
