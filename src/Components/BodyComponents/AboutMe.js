@@ -13,7 +13,7 @@ I'm a Web Developer student.`
     },
     {
     currently: <><FontAwesomeIcon className="aboutIcon" icon={faPlay} style={{color: "green"}}/>
- I'm currently developing my own application on Self-Development.
+ I'm currently developing my own application on Self-Development and my youtube channel on WebDev coding.
     </>},
     {
     objective: <><FontAwesomeIcon className="aboutIcon" icon={faBullseye} style={{color: "red"}}/>
