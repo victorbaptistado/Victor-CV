@@ -11,37 +11,29 @@ import gitHubIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Ima
 const Header = () => {
     return (
 
-        <div className="headerWrapper"> 
-        
-
+    <div className="headerWrapper"> 
    
         <div className="headContainer1">
-       <img className="profilePic" src={profilePic}></img> 
-       </div>
-
-
+            <img className="profilePic" src={profilePic}></img> 
+        </div>
 
         <div className="headContainer2">
-        <div className="aboutMeHeader">
-        <h2>&lt;h1&gt;I'm a Web Development student!&lt;h1&gt;</h2>
-        <p>&lt;p&gt;Filling lines of codes on my daily life. &lt;p&gt;</p>
+            <div className="aboutMeHeader">
+                <h2>&lt;h1&gt;I'm a Web Development student!&lt;h1&gt;</h2>
+                <p>&lt;p&gt;Filling lines of codes on my daily life. &lt;p&gt;</p>
+            </div>
+            <h1 className="profileName">VICTOR BAPTISTA</h1> 
+            <div className="iconsRow">
+            <img className="toolIcon" src={reactIcon}></img>
+            <img className="toolIcon" src={javascriptIcon}></img>
+            <img className="toolIcon" src={htmlIcon}></img>
+            <img className="toolIcon" src={cssIcon}></img>
+            <img className="toolIcon" src={adobePremiereIcon}></img>
+            <img className="toolIcon" src={adobePhotoshopIcon}></img>
+            <img className="toolIcon" src={gitHubIcon}></img>
+            </div>
         </div>
-
-        <h1 className="profileName">VICTOR BAPTISTA</h1> 
-
-        <div className="iconsRow">
-        <img className="toolIcon" src={reactIcon}></img>
-        <img className="toolIcon" src={javascriptIcon}></img>
-        <img className="toolIcon" src={htmlIcon}></img>
-        <img className="toolIcon" src={cssIcon}></img>
-        <img className="toolIcon" src={adobePremiereIcon}></img>
-        <img className="toolIcon" src={adobePhotoshopIcon}></img>
-        <img className="toolIcon" src={gitHubIcon}></img>
-        </div>
-        </div>
-
-
-        </div>
+    </div>
     )
 }
 
