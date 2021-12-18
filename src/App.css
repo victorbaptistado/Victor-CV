@@ -96,6 +96,8 @@ span {
 
 iframe {
   border-radius: 5%;
+  width: 50%;
+  min-width: 23rem;
 }
 
 /* ---- DIV ----  */

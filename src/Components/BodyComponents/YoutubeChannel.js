@@ -11,7 +11,7 @@ That's a way I found to expose my thoughts, to solidify my knowledge, and a data
 to watch my progress - a way to remember how did I solve some issues. At the same time it may be
 helpfull to others:`}
         <br/><br/>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/WtjeUuz1VhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="260" height="315" src="https://www.youtube.com/embed/WtjeUuz1VhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </>
     },
     
