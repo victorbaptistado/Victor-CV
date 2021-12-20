@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.8e23ba4f.chunk.css",
-    "main.js": "/static/js/main.08c2a96f.chunk.js",
-    "main.js.map": "/static/js/main.08c2a96f.chunk.js.map",
+    "main.js": "/static/js/main.1854bc62.chunk.js",
+    "main.js.map": "/static/js/main.1854bc62.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5a7960a5.js",
     "runtime-main.js.map": "/static/js/runtime-main.5a7960a5.js.map",
     "static/js/2.f7a06a7e.chunk.js": "/static/js/2.f7a06a7e.chunk.js",
@@ -25,12 +25,13 @@
     "static/media/location-pin.a6d58d3c.png": "/static/media/location-pin.a6d58d3c.png",
     "static/media/one-soul-app-image.d627c8f7.PNG": "/static/media/one-soul-app-image.d627c8f7.PNG",
     "static/media/one-soul-icon.d0bc4871.png": "/static/media/one-soul-icon.d0bc4871.png",
-    "static/media/react-icon.62650ec6.png": "/static/media/react-icon.62650ec6.png"
+    "static/media/react-icon.62650ec6.png": "/static/media/react-icon.62650ec6.png",
+    "static/media/wordpress-icon.11ed0915.png": "/static/media/wordpress-icon.11ed0915.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5a7960a5.js",
     "static/js/2.f7a06a7e.chunk.js",
     "static/css/main.8e23ba4f.chunk.css",
-    "static/js/main.08c2a96f.chunk.js"
+    "static/js/main.1854bc62.chunk.js"
   ]
 }

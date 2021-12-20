@@ -4,6 +4,7 @@ import reactIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Imag
 import javascriptIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/javascript-icon.png";
 import htmlIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/html5-icon.png";
 import cssIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/css3-icon.png";
+import wordpressIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/wordpress-icon.png";
 import adobePremiereIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/adobe-premiere-icon.jpg";
 import adobePhotoshopIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/adobe-photoshop-icon.png";
 import githubIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/github-icon.png";
@@ -23,6 +24,7 @@ const Tools = ({id, title}) => {
     <img className="toolIcon" src={javascriptIcon}></img>
     <img className="toolIcon" src={htmlIcon}></img>
     <img className="toolIcon" src={cssIcon}></img>
+    <img className="toolIcon" src={wordpressIcon}></img>
     <img className="toolIcon" src={adobePremiereIcon}></img>
     <img className="toolIcon" src={adobePhotoshopIcon}></img>
     <img className="toolIcon" src={githubIcon}></img>
@@ -56,6 +58,19 @@ Bellow is a piece I worked in audio recording & mixing, video recording & editin
     </>
     },
     {
+    wordpress: 
+    <>
+    <h3>Wordpress</h3>
+    <p>I've been working with wordpress for more than two years. Here are a few websites I made:</p>
+    <br/>
+  
+    <a href="https://kimbowraider.com/" target="_blank">  <img width="50px" src={wordpressIcon}/>Kimbow Raider's website</a>
+    <br/><br/>
+    <a href="https://victorfugagnoli.blogspot.com/" target="_blank"> <img width="50px" src={wordpressIcon}/>Victor Fugagnoli's website</a>
+    
+    </>
+    },
+    {
     github: 
     <>
     <h3>Github</h3>
@@ -81,6 +96,7 @@ You can check my github on the icon below:</p>
             {text.react}
             {text.htmlcss}
             {text.adobe}
+            {text.wordpress}
             <br/>
             {text.github}
             <br/><br/>
