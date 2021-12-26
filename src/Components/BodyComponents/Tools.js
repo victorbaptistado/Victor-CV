@@ -43,8 +43,9 @@ const Tools = ({id, title}) => {
     htmlcss: 
     <>
     <h3>Html & Css</h3>
-    <p>With Html & Css I can create beautiful & responsive websites. 
-This website was made entirely by me without use of any html/css templates.</p>
+    <p>I'm able to use Html & Css with proficiency.
+This website was made with html/css.
+I also use SASS for optimized CSS.</p>
     </>
     },
     {
