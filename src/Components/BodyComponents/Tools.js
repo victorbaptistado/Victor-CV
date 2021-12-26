@@ -35,25 +35,25 @@ const Tools = ({id, title}) => {
     react: 
     <>
     <h3>React</h3>
-    <p>React is the Javascript library I'm currently using. 
-    I use hooks to alter states, creating dynamic websites.</p>
+    <p>{`React is the Javascript library I'm mostly using to create dynamic websites. 
+It's been a while since I started to use it, and I love it.`}</p>
     </>
     },
     {
     htmlcss: 
     <>
     <h3>Html & Css</h3>
-    <p>I'm able to use Html & Css with proficiency.
+    <p>{`I'm able to use Html & Css with proficiency.
 This website was made with html/css.
-I also use SASS for optimized CSS.</p>
+I also use SASS for optimized CSS.`}</p>
     </>
     },
     {
     adobe: 
     <>
     <h3>Adobe Premiere / Photoshop</h3>
-    <p>These are tools that I'm very familiar with, since my hobbies head towards audio-visual.
-Bellow is a piece I worked in audio recording & mixing, video recording & editing (using Adobe Premiere):</p>
+    <p>{`These are tools that I'm very familiar with, since my hobbies head towards audio-visual.
+Bellow is a piece I worked: recording audio & mixing it. Also video recording & editing (using Adobe Premiere):`}</p>
     <br/><br/>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/jxDCql_NcoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </>
@@ -62,7 +62,7 @@ Bellow is a piece I worked in audio recording & mixing, video recording & editin
     wordpress: 
     <>
     <h3>Wordpress</h3>
-    <p>I've been working with wordpress for more than two years. Here are a few websites I made:</p>
+    <p>{`I've been working with wordpress for more than two years. Here are a few websites I made:`}</p>
     <br/>
   
     <a href="https://kimbowraider.com/" target="_blank">  <img width="50px" src={wordpressIcon}/>Kimbow Raider's website</a>
@@ -75,8 +75,8 @@ Bellow is a piece I worked in audio recording & mixing, video recording & editin
     github: 
     <>
     <h3>Github</h3>
-    <p>Git hub is the version control software I use for managing my projects.
-You can check my github on the icon below:</p>
+    <p>{`Github is the version control software I use for managing my projects.
+You can check my github on the icon below:`}</p>
     <a href="https://github.com/victorbaptistado" target="_blank"><img width="50px"  src={githubIcon2}/></a>
     
 </>
