@@ -54,6 +54,7 @@ p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.8rem;
   white-space: pre-wrap;
+  margin-bottom: 0.7rem;
   color: rgba(255, 255, 255, 0.836);
 }
 
@@ -62,7 +63,7 @@ span {
 }
 
 .buttons {
-  margin: 0% 0% 0% 0%;
+  margin: 0%;
   padding: 8% 0% 8% 0%;
   border-style: none;
   border-style: groove;
@@ -97,7 +98,7 @@ span {
   grid-template-columns: 30% 70%;
   height: fit-content;
   .profilePic {
-    margin: 0% 0% 0% 0%;
+    margin: 0%;
     min-width: 19rem;
     width: 96%;
     height: auto;
