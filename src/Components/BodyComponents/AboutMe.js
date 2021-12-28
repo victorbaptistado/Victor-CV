@@ -9,7 +9,7 @@ const AboutMe = ({id, title}) => {
 const [texts, setText] = useState([
     {
     about: `Welcome to my personal website! 
-I'm a Web Developer, looking foward to have my first experience in the field! 
+I'm a Web Developer, looking forward to have my first experience in the field! 
 My proficient languages? Javascript / React.js.`
     },
     {
