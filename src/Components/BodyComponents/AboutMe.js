@@ -9,8 +9,10 @@ const AboutMe = ({id, title}) => {
 const [texts, setText] = useState([
     {
     about: `Welcome to my personal website! 
-I'm a Web Developer, looking forward to have my first experience in the field! 
-My proficient languages? Javascript / React.js.`
+I'm a Web Developer hermit who loves to burn my neurones writing code & solving problems. 
+I can appreciate both conditions of the coding's journey: solitude & team work.
+My proficient computer languages: React.js / Javascript.
+I'm aspiring have a apprenticeship in the field.`
     },
     {
     currently: <><FontAwesomeIcon className="aboutIcon" icon={faPlay} style={{color: "green"}}/>
