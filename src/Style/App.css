@@ -58,6 +58,7 @@ a {
 p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.8rem;
+  text-align: justify;
   white-space: pre-wrap;
   margin-bottom: 0.7rem;
   color: rgba(255, 255, 255, 0.836);
@@ -151,11 +152,34 @@ span {
   margin: 0% 0% 8% 9rem;
 }
 
-.bodyWrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 22% 78%;
-      grid-template-columns: 22% 78%;
+@media (min-width: 961px) {
+  .bodyWrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 22% 78%;
+        grid-template-columns: 22% 78%;
+  }
+}
+
+@media (max-width: 960px) {
+  .bodyWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.bodyWrapper .mobileMenu {
+  text-align: right;
+  margin: 2% 5% 2% 0%;
+}
+
+.bodyWrapper .mobileMenu .menuButton {
+  padding: 2%;
 }
 
 .bodyWrapper .bodyContainer1 {
@@ -209,13 +233,24 @@ span {
 }
 
 .bodyWrapper .bodyContainer2 {
-  margin: 2.8% 5% 2% 0.5%;
-  text-align: justify;
+  margin: 2.8% 0.2% 2% 2%;
   background-color: rgba(62, 70, 112, 0.733);
   border-style: groove;
   border-width: 0.09cm;
   border-radius: 1%;
   padding: 2%;
+}
+
+@media (min-width: 961px) {
+  .bodyWrapper .bodyContainer2 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 960px) {
+  .bodyWrapper .bodyContainer2 {
+    margin: 0px;
+  }
 }
 
 .bodyWrapper .bodyContainer2 .sessionContainer {

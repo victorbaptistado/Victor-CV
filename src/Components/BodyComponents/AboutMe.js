@@ -10,10 +10,10 @@ const [texts, setText] = useState([
     {
     about: `Welcome to my personal website! 
 I'm a Web Developer hermit who loves to burn my neurones writing code & solving problems. 
-I appreciate both conditions of the coding's journey: solitude & team work.
+I appreciate both conditions of the coding journey: solitude & team work.
 
 My proficient computer languages: React.js / Javascript.
-I'm aspiring have a apprenticeship in the field.`
+I'm aspiring to have my first apprenticeship in the field.`
     },
     {
     currently: <><FontAwesomeIcon className="aboutIcon" icon={faPlay} style={{color: "green"}}/>

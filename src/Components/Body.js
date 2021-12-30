@@ -4,18 +4,29 @@ import ContactInfo from './BodyComponents/ContactInfo';
 import Tools from "./BodyComponents/Tools";
 import Projects from "./BodyComponents/Projects";
 import AboutMe from "./BodyComponents/AboutMe";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
+import useMediaQuery from "./Hooks/useMediaQuery";
 
 const Body = () => {
+
+    const isMobile = useMediaQuery('(max-width: 960px)');
 
 
     return (
         <div className="bodyWrapper"> 
         
-            {/* ---- CONTAINER 1 ---- */}
+            {/* ---- CONTAINER 1 / NAVIGATION ---- */}
 
+    
+            {isMobile ? 
+            <>
+            <div className='mobileMenu'>
+            <button className='menuButton'><FontAwesomeIcon className='aboutIcon' icon={faEllipsisV}/></button>
+            </div></> 
+            :      
+            <>
             <div className="bodyContainer1" >
-     
                 <nav>
                 <ul>
                 <a href="#aboutMe"><li className="buttons"><b>ABOUT ME</b></li></a>
@@ -24,10 +35,12 @@ const Body = () => {
                 <a href="#projects"><li className="buttons"><b>PROJECTS</b></li></a>
                 </ul>
                 </nav>
-
                 <ContactInfo/>
+                </div>
+            </>}
 
-            </div>
+
+
 
             {/* ---- CONTAINER 2 ---- */}
 

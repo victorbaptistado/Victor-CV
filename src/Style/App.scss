@@ -53,6 +53,9 @@ a {
 p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.8rem;
+  text-align: justify;
+  @media (max-width: 500px) {
+  }
   white-space: pre-wrap;
   margin-bottom: 0.7rem;
   color: rgba(255, 255, 255, 0.836);
@@ -97,6 +100,7 @@ span {
   display: grid;
   grid-template-columns: 30% 70%;
   height: fit-content;
+
   .profilePic {
     margin: 0%;
     min-width: 19rem;
@@ -112,7 +116,6 @@ span {
     border-radius: 0% 0% 10% 30%;
     border-color: rgb(80, 92, 126);
   }
-
   .headContainer2 {
     margin-right: 5%;
     margin-left: 0%;
@@ -126,9 +129,21 @@ span {
 }
 
 .bodyWrapper {
-  display: grid;
-  grid-template-columns: 22% 78%;
-
+  @media (min-width: 961px) {
+    display: grid;
+    grid-template-columns: 22% 78%;
+  }
+  @media (max-width: 960px) {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobileMenu {
+    text-align: right;
+    margin: 2% 5% 2% 0%;
+    .menuButton {
+      padding: 2%;
+    }
+  }
   .bodyContainer1 {
     margin: 10% 0% 0% 0%;
     position: sticky;
@@ -164,8 +179,13 @@ span {
   }
 
   .bodyContainer2 {
-    margin: 2.8% 5% 2% 0.5%;
-    text-align: justify;
+    margin: 2.8% 0.2% 2% 2%;
+    @media (min-width: 961px) {
+      width: 80%;
+    }
+    @media (max-width: 960px) {
+      margin: 0px;
+    }
     background-color: rgba(62, 70, 112, 0.733);
     border-style: groove;
     border-width: 0.09cm;
