@@ -4,8 +4,6 @@ import ContactInfo from './BodyComponents/ContactInfo';
 import Tools from "./BodyComponents/Tools";
 import Projects from "./BodyComponents/Projects";
 import AboutMe from "./BodyComponents/AboutMe";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
 import useMediaQuery from "./Hooks/useMediaQuery";
 
 const Body = () => {
@@ -19,12 +17,8 @@ const Body = () => {
             {/* ---- CONTAINER 1 / NAVIGATION ---- */}
 
     
-            {isMobile ? 
-            <>
-            <div className='mobileMenu'>
-            <button className='menuButton'><FontAwesomeIcon className='aboutIcon' icon={faEllipsisV}/></button>
-            </div></> 
-            :      
+            {isMobile ?
+            "":      
             <>
             <div className="bodyContainer1" >
                 <nav>

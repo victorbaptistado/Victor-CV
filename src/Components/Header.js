@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import profilePic from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/Profile-Pic.png";
 import reactIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/react-icon.png";
 import javascriptIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/javascript-icon.png";
@@ -8,12 +8,60 @@ import wordpressIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/
 import adobePremiereIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/adobe-premiere-icon.jpg";
 import adobePhotoshopIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/adobe-photoshop-icon.png";
 import gitHubIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/github-icon.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEllipsisV, faHandPointLeft } from '@fortawesome/free-solid-svg-icons';
+import useMediaQuery from "./Hooks/useMediaQuery";
 
 const Header = () => {
+
+    const isMobile = useMediaQuery('(max-width: 960px)');
+
+    const [menuActive, setMenuActive] = useState("")
+
+
+
+
+    
+    function handle () {
+        setMenuActive(
+        <div className='menuActive'>
+        <nav>
+        <ul>
+        <a href="#aboutMe"><li className="mobileButtons"><b>ABOUT ME</b></li></a>
+        <a href="#tools"><li className="mobileButtons"><b>TOOLS</b></li></a>
+        <a href="#youtubeChannel"><li className="mobileButtons"><b>YOUTUBE CHANNEL</b></li></a>
+        <a href="#projects"><li className="mobileButtons"><b>PROJECTS</b></li></a>
+        </ul>
+        </nav>
+        </div>
+        )
+    }
+
+    
+    
+
+
+
     return (
 
+    <>
+    {isMobile ? 
+        <>
+        <div className="headerMobile">
+
+        <button onClick={()=>handle()} className='menuTrigger'>
+        <FontAwesomeIcon className='aboutIcon' icon={faEllipsisV}/>
+        </button>
+
+
+        </div></> : ""}
+        
+    {menuActive}
+
+
     <div className="headerWrapper"> 
-   
+
+
         <div className="headContainer1">
             <img className="profilePic" src={profilePic}></img> 
         </div>
@@ -36,6 +84,7 @@ const Header = () => {
             </div>
         </div>
     </div>
+    </>
     )
 }
 
