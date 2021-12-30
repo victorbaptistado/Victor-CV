@@ -10,17 +10,18 @@ const [texts, setText] = useState([
     {
     about: `Welcome to my personal website! 
 I'm a Web Developer hermit who loves to burn my neurones writing code & solving problems. 
-I can appreciate both conditions of the coding's journey: solitude & team work.
+I appreciate both conditions of the coding's journey: solitude & team work.
+
 My proficient computer languages: React.js / Javascript.
 I'm aspiring have a apprenticeship in the field.`
     },
     {
     currently: <><FontAwesomeIcon className="aboutIcon" icon={faPlay} style={{color: "green"}}/>
- I'm currently developing my own application on Self-Development and my youtube channel on WebDev coding.
+I'm currently developing my own application on Self-Development and my youtube channel on WebDev coding.
     </>},
     {
     objective: <><FontAwesomeIcon className="aboutIcon" icon={faBullseye} style={{color: "red"}}/>
-I'm looking forward to collaborate on a project and to be part of an exciting, challenging team that can help me to develop my skills.
+I'm aspiring an opportunity to collaborate on a project as apprentice, to be challenged so to develop my skills.
     </>},
     {
     hobbies: <><FontAwesomeIcon className="aboutIcon" icon={faUmbrellaBeach} style={{color:"deepskyblue"}}/>

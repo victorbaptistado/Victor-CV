@@ -34,17 +34,19 @@ const Tools = ({id, title}) => {
     {
     react: 
     <>
-    <h3>React</h3>
-    <p>{`React is the Javascript library I'm mostly using to create dynamic websites. 
-It's been a while since I started to use it, and I love it.`}</p>
+    <h3>React & Javascript</h3>
+    <p>{`It's been a while since I started to use them to create dynamic websites. 
+React is the Javascript library I'm using the most - 
+where my coding's journey is currently heading towards.
+Like a hermit, I spend hours devoted to it. Me & my coffee. I love it!`}</p>
     </>
     },
     {
     htmlcss: 
     <>
-    <h3>Html & Css</h3>
-    <p>{`I'm able to use Html & Css with proficiency.
-This website was made with html/css.
+    <h3>HTML & CSS</h3>
+    <p>{`I'm proficient with HTML and CSS.
+This website was made with it.
 I also use SASS for optimized CSS.`}</p>
     </>
     },
@@ -52,8 +54,11 @@ I also use SASS for optimized CSS.`}</p>
     adobe: 
     <>
     <h3>Adobe Premiere / Photoshop</h3>
-    <p>{`These are tools that I'm very familiar with, since my hobbies head towards audio-visual.
-Bellow is a piece I worked: recording audio & mixing it. Also video recording & editing (using Adobe Premiere):`}</p>
+    <p>{`
+Editing videos with Adobe Premiere is something I really enjoy and I'm very familiar with. 
+Music Videos / Lyric Videos / Comedy Videos - that gave me a great knowhow on dealing with computer Softwares.
+There are similar features in Premiere which I found a parallel to languages like Javascript/React.js - for exemple: "Keys" to build up animations.
+Bellow is a piece I worked on - recording audio & mixing | video recording & editing (using Adobe Premiere):`}</p>
     <br/><br/>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/jxDCql_NcoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </>
@@ -62,7 +67,10 @@ Bellow is a piece I worked: recording audio & mixing it. Also video recording & 
     wordpress: 
     <>
     <h3>Wordpress</h3>
-    <p>{`I've been working with wordpress for more than two years. Here are a few websites I made:`}</p>
+    <p>{`I've been working with wordpress for more than two years. 
+That's where my webdev Journey started:
+making websites for texts I wrote & for my band.
+Here are a few websites I made:`}</p>
     <br/>
   
     <a href="https://kimbowraider.com/" target="_blank">  <img width="50px" src={wordpressIcon}/>Kimbow Raider's website</a>

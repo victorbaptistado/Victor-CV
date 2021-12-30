@@ -21,7 +21,7 @@ const Header = () => {
         <div className="headContainer2">
             <div className="aboutMeHeader">
                 <h2>&lt;h1&gt;Hermit of Code&lt;h1&gt;</h2>
-                <p>&lt;p&gt;On my Long and Widing journey to develop my skills. &lt;p&gt;</p>
+                <p>&lt;p&gt;On my Long and Winding journey to develop my skills. &lt;p&gt;</p>
             </div>
             <h1 className="profileName">VICTOR BAPTISTA</h1> 
             <div className="iconsRow">
