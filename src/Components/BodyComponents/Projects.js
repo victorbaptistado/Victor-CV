@@ -9,8 +9,7 @@ const Projects = ({id, title}) => {
     
 const [texts, setText] = useState([
     {
-    about:<>{`
-Self-Development is a subject I find essencial - to optimize life's learning process and grow-up healthier, centered, more productive and happier. 
+    about:<>{`Self-Development is a subject I find essencial - to optimize life's learning process and grow-up healthier, centered, more productive and happier. 
 My interests dive deep, as I love to read different books about it, acquiring knowhow enought to attempt my first app on the subject.  
 
 It's still on Demo version. In there I'll suggest series of challenges to make the user learn by the best way: concept & practice.
