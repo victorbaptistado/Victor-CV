@@ -1,3 +1,5 @@
+$mobileIcon: rgba(243, 188, 162, 0.979);
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgba(1, 1, 19, 0.932);
@@ -23,7 +25,6 @@ h1 {
   border-radius: 0% 0% 10% 0%;
   width: fit-content;
 }
-
 h2 {
   color: white;
 }
@@ -33,6 +34,12 @@ h3 {
   font-size: 2.3rem;
   width: fit-content;
   margin-bottom: 1.3rem;
+}
+
+h4 {
+  text-align: center;
+  font-size: 3rem;
+  margin-left: 30%;
 }
 
 nav {
@@ -74,12 +81,25 @@ span {
 }
 
 .headerMobile {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
   text-align: right;
   margin: 2% 5% 2% 0%;
+  .contactTrigger {
+    margin-left: 20%;
+    border: transparent;
+    background-color: transparent;
+    color: $mobileIcon;
+    width: 100px;
+    text-align: left;
+    font-size: 4rem;
+  }
   .menuTrigger {
-    padding: 4%;
+    width: 50%;
+    padding: 0%;
+    margin-left: 80%;
     border-radius: 1rem;
-    background-color: rgba(255, 180, 145, 0.979);
+    background-color: $mobileIcon;
   }
 }
 
@@ -139,7 +159,13 @@ span {
   .headContainer2 {
     margin-right: 5%;
     margin-left: 0%;
-    margin-top: 5rem;
+    @media (max-width: 960px) {
+      margin-top: 2.5rem;
+      margin-bottom: 2%;
+    }
+    @media (min-width: 961px) {
+      margin-top: 5rem;
+    }
     display: flex;
     flex-direction: column;
     .aboutMeHeader {
@@ -155,7 +181,7 @@ span {
   }
 
   .bodyContainer1 {
-    margin: 10% 0% 0% 5%;
+    margin: 10% 0% 10% 5%;
     position: sticky;
     .buttons {
       margin: 0%;
@@ -178,7 +204,7 @@ span {
     }
     .contactsWrapper {
       text-align: center;
-      margin: 15% 0% 0% 10%;
+      margin: 5% 0% 0% 0%;
       background-color: rgb(0, 0, 19);
       border-radius: 10%;
       border-style: solid;
@@ -213,7 +239,7 @@ span {
       width: 70%;
     }
     @media (max-width: 960px) {
-      margin: 0px;
+      margin: 1px;
     }
     background-color: rgba(62, 70, 112, 0.733);
     border-style: groove;

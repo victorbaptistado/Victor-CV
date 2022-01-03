@@ -1,4 +1,5 @@
 import {React, useState} from 'react';
+import linkedinIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/linkedin-icon.png";
 import phoneIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/phone-call.png";
 import emailIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/email.png";
 import githubIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/github-1.png";
@@ -13,6 +14,12 @@ const ContactInfo = () => {
 
     const contact =
     [
+    {
+        linkedin:
+        <div className="contactContainer">
+        <img className="contactIcon" src={linkedinIcon}/><a target="_blank" href="https://www.linkedin.com/in/vicbaptista/"><h2><span> /victorbaptistado</span></h2></a>
+        </div>
+    },
     {
         phone:    
         <div className="contactContainer">
@@ -49,7 +56,8 @@ const ContactInfo = () => {
         contact.map(contact=> 
       
         <ul>
-        
+
+        {contact.linkedin}        
         {contact.phone}
         {contact.email}
         {contact.location}

@@ -1,16 +1,17 @@
 import {React, useState, useEffect } from 'react';
 import profilePic from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/Profile-Pic.png";
-import reactIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/react-icon.png";
-import javascriptIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/javascript-icon.png";
-import htmlIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/html5-icon.png";
-import cssIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/css3-icon.png";
-import wordpressIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/wordpress-icon.png";
-import adobePremiereIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/adobe-premiere-icon.jpg";
-import adobePhotoshopIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/adobe-photoshop-icon.png";
-import gitHubIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/github-icon.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEllipsisV, faChevronCircleUp } from '@fortawesome/free-solid-svg-icons';
+import { faEllipsisV, faChevronCircleUp, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import useMediaQuery from "./Hooks/useMediaQuery";
+import SkillsIcons from './BodyComponents/SkillsIcons';
+
+
+import linkedinIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/linkedin-icon.png";
+import phoneIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/phone-call.png";
+import emailIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/email.png";
+import githubIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/github-1.png";
+import locationIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/location-pin.png";
+
 
 
 
@@ -18,31 +19,51 @@ const Header = () => {
 
     const isMobile = useMediaQuery('(max-width: 960px)');
 
-
-
     const [menuActive, setMenuActive] = useState("");
-
+    const [mobileContact, setMobileContact] = useState("")
     const [opacity, setOpacity] = useState(0);
-  
+    
   
   /*  const [transition, setTransition] = useState(       
     "1s ease 0.3s"
     );*/
  
+
+    function handleContacts () {
+        setMobileContact(         
+        <div style={{opacity:`${opacity}`}} className='' >
+        <button className='closeMenu' onClick={()=>setMobileContact("")}><FontAwesomeIcon icon={faChevronCircleUp}/></button>
+ 
+        <img className="" src={linkedinIcon}/><a target="_blank" href="https://www.linkedin.com/in/vicbaptista/"><h2><span> /victorbaptistado</span></h2></a>
+ 
+        <img className="" src={phoneIcon}/><h2><span>07532-654137</span></h2>
+
+        <img className="" src={emailIcon}/> <h2><span>victorbaptistado@gmail.com</span></h2>
+ 
+        <img className="" src={locationIcon}/><h2><span>United Kingdom, London</span></h2>
+
+        <img className="" src={githubIcon}/><a target="_blank" href="https://github.com/victorbaptistado"><h2><span> /victorbaptistado</span></h2></a>
+
+        </div>
+    
+    
+
+      
+        )
+    }
     useEffect(() => {
 
-    setOpacity(
-    function handle(){
-     return 1;
-    })  
-    },[()=>handle()]);
+        setOpacity(
+        function handleMenu(){
+         return 1;
+        })  
+        },[()=>handleMenu()]);
+    
 
 
-    function handle () {
-       
 
-        setMenuActive(
-            
+    function handleMenu () {
+        setMenuActive(         
         <div style={{opacity:`${opacity}`}} className='menuActive' >
         <nav>
         <ul>
@@ -57,30 +78,27 @@ const Header = () => {
         )
     }
 
-    
-    
-
-
-
     return (
-
     <>
-
-{menuActive}
+    {mobileContact}
+    {menuActive}
 
     {isMobile ? 
         <>
         <div className="headerMobile">
-        <button onClick={()=>handle()} className='menuTrigger'>
-        <FontAwesomeIcon className='aboutIcon' icon={faEllipsisV}/>
+
+        <button onClick={()=>handleContacts()} className='contactTrigger'>
+        <FontAwesomeIcon icon={faUserCircle}/>
+        </button>
+
+        <h4>Victor</h4>
+
+        <button onClick={()=>handleMenu()} className='menuTrigger'>
+        <FontAwesomeIcon icon={faEllipsisV}/>
         </button>
         </div></> : ""}
-        
-
-
 
     <div className="headerWrapper" > 
-
 
         <div className="headContainer1">
             <img className="profilePic" src={profilePic}></img> 
@@ -92,16 +110,7 @@ const Header = () => {
                 <p style={{textAlign: "left"}}>&lt;p&gt;On my Long and Winding journey to develop. &lt;p&gt;</p>
             </div>
             <h1 className="profileName">VICTOR BAPTISTA</h1> 
-            <div className="iconsRow">
-            <img className="toolIcon" src={reactIcon}></img>
-            <img className="toolIcon" src={javascriptIcon}></img>
-            <img className="toolIcon" src={htmlIcon}></img>
-            <img className="toolIcon" src={cssIcon}></img>
-            <img className="toolIcon" src={wordpressIcon}></img>
-            <img className="toolIcon" src={adobePremiereIcon}></img>
-            <img className="toolIcon" src={adobePhotoshopIcon}></img>
-            <img className="toolIcon" src={gitHubIcon}></img>
-            </div>
+            <SkillsIcons/>
         </div>
     </div>
     </>
