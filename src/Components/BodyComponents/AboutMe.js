@@ -36,8 +36,10 @@ A list of some of my hobbies: Reading, Writing, Singing, Guitar, Acting, Directi
 
 
     return ( 
-        <div className="sessionContainer" id={id}>
+ 
+        <div className="sectionContainer" id={id}>
             <h1>{title}</h1>
+            <section>
             <br/><br/>
 
             {texts.map(text =>
@@ -53,7 +55,9 @@ A list of some of my hobbies: Reading, Writing, Singing, Guitar, Acting, Directi
             )}
                   <br/>
                <hr/>
+            </section>
         </div>
+
         
     )
 }

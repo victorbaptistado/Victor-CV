@@ -30,8 +30,10 @@ You can try the app clicking the icon below: `}
 
 
     return (
-        <div className="sessionContainer" id={id}>
+  
+        <div className="sectionContainer" id={id}>
             <h1>{title}</h1>
+            <section>
             <br/><br/>
 
             {texts.map(text =>
@@ -40,10 +42,14 @@ You can try the app clicking the icon below: `}
             <p >{text.about}</p>
 
             <br/>
+
             </>
-            )}
-             </div>
-        
+            )
+
+            }
+            </section>
+        </div>
+
     )
 }
 

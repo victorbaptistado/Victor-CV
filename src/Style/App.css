@@ -113,6 +113,28 @@ span {
   background-color: rgba(243, 188, 162, 0.979);
 }
 
+.mobileContact {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-bottom: 3rem;
+  height: auto;
+  border-radius: 0 0 1rem 0;
+  background-color: rgba(255, 196, 0, 0.808);
+}
+
+.mobileContact .closeContacts {
+  background-color: rgba(165, 83, 24, 0.459);
+  width: 100%;
+  padding: 3% 0%;
+  border: red;
+}
+
+.mobileContact .mobileContactIcon {
+  width: 4rem;
+}
+
 .menuActive {
   position: absolute;
   width: 100%;
@@ -313,15 +335,15 @@ span {
   }
 }
 
-.bodyWrapper .bodyContainer2 .sessionContainer {
+.bodyWrapper .bodyContainer2 .sectionContainer {
   margin-bottom: 3%;
 }
 
-.bodyWrapper .bodyContainer2 .sessionContainer .aboutIcon {
+.bodyWrapper .bodyContainer2 .sectionContainer .aboutIcon {
   margin-right: 1rem;
 }
 
-.bodyWrapper .bodyContainer2 .sessionContainer .oneSoulAppImage {
+.bodyWrapper .bodyContainer2 .sectionContainer .oneSoulAppImage {
   float: right;
   width: 20rem;
   height: -webkit-fit-content;
@@ -333,12 +355,12 @@ span {
 }
 
 @media (max-width: 960px) {
-  .bodyWrapper .bodyContainer2 .sessionContainer .oneSoulAppImage {
+  .bodyWrapper .bodyContainer2 .sectionContainer .oneSoulAppImage {
     width: 50%;
   }
 }
 
-.bodyWrapper .bodyContainer2 .sessionContainer iframe {
+.bodyWrapper .bodyContainer2 .sectionContainer iframe {
   border-radius: 5%;
   width: 100%;
   min-width: 23rem;

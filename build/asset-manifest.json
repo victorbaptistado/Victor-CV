@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.8b49813e.chunk.css",
-    "main.js": "/static/js/main.515165ca.chunk.js",
-    "main.js.map": "/static/js/main.515165ca.chunk.js.map",
+    "main.css": "/static/css/main.1d402670.chunk.css",
+    "main.js": "/static/js/main.8371d435.chunk.js",
+    "main.js.map": "/static/js/main.8371d435.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5a7960a5.js",
     "runtime-main.js.map": "/static/js/runtime-main.5a7960a5.js.map",
-    "static/js/2.c3dd3150.chunk.js": "/static/js/2.c3dd3150.chunk.js",
-    "static/js/2.c3dd3150.chunk.js.map": "/static/js/2.c3dd3150.chunk.js.map",
+    "static/js/2.45d3555a.chunk.js": "/static/js/2.45d3555a.chunk.js",
+    "static/js/2.45d3555a.chunk.js.map": "/static/js/2.45d3555a.chunk.js.map",
     "static/js/3.f2190866.chunk.js": "/static/js/3.f2190866.chunk.js",
     "static/js/3.f2190866.chunk.js.map": "/static/js/3.f2190866.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.8b49813e.chunk.css.map": "/static/css/main.8b49813e.chunk.css.map",
-    "static/js/2.c3dd3150.chunk.js.LICENSE.txt": "/static/js/2.c3dd3150.chunk.js.LICENSE.txt",
+    "static/css/main.1d402670.chunk.css.map": "/static/css/main.1d402670.chunk.css.map",
+    "static/js/2.45d3555a.chunk.js.LICENSE.txt": "/static/js/2.45d3555a.chunk.js.LICENSE.txt",
     "static/media/Profile-Pic.62e0dfe0.png": "/static/media/Profile-Pic.62e0dfe0.png",
     "static/media/adobe-photoshop-icon.a82e87ab.png": "/static/media/adobe-photoshop-icon.a82e87ab.png",
     "static/media/adobe-premiere-icon.883ba82d.jpg": "/static/media/adobe-premiere-icon.883ba82d.jpg",
@@ -22,6 +22,7 @@
     "static/media/github-icon2.caeb9ff8.png": "/static/media/github-icon2.caeb9ff8.png",
     "static/media/html5-icon.ba5e04bf.png": "/static/media/html5-icon.ba5e04bf.png",
     "static/media/javascript-icon.762e5801.png": "/static/media/javascript-icon.762e5801.png",
+    "static/media/linkedin-icon.09ca2b42.png": "/static/media/linkedin-icon.09ca2b42.png",
     "static/media/location-pin.a6d58d3c.png": "/static/media/location-pin.a6d58d3c.png",
     "static/media/one-soul-app-image.d627c8f7.PNG": "/static/media/one-soul-app-image.d627c8f7.PNG",
     "static/media/one-soul-icon.d0bc4871.png": "/static/media/one-soul-icon.d0bc4871.png",
@@ -30,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.5a7960a5.js",
-    "static/js/2.c3dd3150.chunk.js",
-    "static/css/main.8b49813e.chunk.css",
-    "static/js/main.515165ca.chunk.js"
+    "static/js/2.45d3555a.chunk.js",
+    "static/css/main.1d402670.chunk.css",
+    "static/js/main.8371d435.chunk.js"
   ]
 }

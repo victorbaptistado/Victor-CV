@@ -31,24 +31,21 @@ const Header = () => {
 
     function handleContacts () {
         setMobileContact(         
-        <div style={{opacity:`${opacity}`}} className='' >
-        <button className='closeMenu' onClick={()=>setMobileContact("")}><FontAwesomeIcon icon={faChevronCircleUp}/></button>
+        <div style={{opacity:`${opacity}`}} className='mobileContact' >
+        <button className='closeContacts' onClick={()=>setMobileContact("")}><FontAwesomeIcon icon={faChevronCircleUp}/></button>
  
-        <img className="" src={linkedinIcon}/><a target="_blank" href="https://www.linkedin.com/in/vicbaptista/"><h2><span> /victorbaptistado</span></h2></a>
+        <img className="mobileContactIcon" src={linkedinIcon} /><a target="_blank" href="https://www.linkedin.com/in/vicbaptista/" ><h2><span> /victorbaptistado</span></h2></a>
  
-        <img className="" src={phoneIcon}/><h2><span>07532-654137</span></h2>
+        <img className="mobileContactIcon" src={phoneIcon} /><h2><span>07532-654137</span></h2>
 
-        <img className="" src={emailIcon}/> <h2><span>victorbaptistado@gmail.com</span></h2>
+        <img className="mobileContactIcon" src={emailIcon}/> <h2><span>victorbaptistado@gmail.com</span></h2>
  
-        <img className="" src={locationIcon}/><h2><span>United Kingdom, London</span></h2>
+        <img className="mobileContactIcon" src={locationIcon}/><h2><span>United Kingdom, London</span></h2>
 
-        <img className="" src={githubIcon}/><a target="_blank" href="https://github.com/victorbaptistado"><h2><span> /victorbaptistado</span></h2></a>
+        <img className="mobileContactIcon" src={githubIcon}/><a target="_blank" href="https://github.com/victorbaptistado"><h2><span> /victorbaptistado</span></h2></a>
 
         </div>
-    
-    
 
-      
         )
     }
     useEffect(() => {
@@ -64,6 +61,7 @@ const Header = () => {
 
     function handleMenu () {
         setMenuActive(         
+        <header>
         <div style={{opacity:`${opacity}`}} className='menuActive' >
         <nav>
         <ul>
@@ -75,6 +73,7 @@ const Header = () => {
         </ul>
         </nav>
         </div>
+        </header>
         )
     }
 

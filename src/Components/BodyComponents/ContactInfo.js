@@ -71,10 +71,11 @@ const ContactInfo = () => {
 
     return (
      
+        <aside>
         <div className="contactsWrapper">
 
         <p style={{fontSize:"1.5rem", height:"auto"}}>Contact Info</p>
-
+        <section>
 
         {contactInfo ? 
         <div>
@@ -94,9 +95,10 @@ const ContactInfo = () => {
 
         {contactInfo}
 
-
+        </section>
         </div>
-
+        
+        </aside>
 
     )
 }

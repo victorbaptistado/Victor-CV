@@ -27,9 +27,10 @@ Have a look:`}
     
 
     return (
-         
-        <div className="sessionContainer" id={id}>
+
+        <div className="sectionContainer" id={id}>
             <h1>{title}</h1>
+            <section>
             <br/><br/>
 
             {texts.map(text =>
@@ -40,8 +41,8 @@ Have a look:`}
             <br/>
             </>
             )}
-             </div>
-        
+            </section>
+            </div>
     )
 
     

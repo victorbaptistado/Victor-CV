@@ -80,8 +80,10 @@ You can check my github on the icon below:`}</p>
     
     
     return (
-        <div className="sessionContainer" id={id}>
+
+        <div className="sectionContainer" id={id}>
             <h1>{title}</h1>
+            <section>
             <br/><br/>
     
             {texts.map(text =>
@@ -98,8 +100,9 @@ You can check my github on the icon below:`}</p>
             )}
             <br/>
             <hr/>
+            </section>
             </div>
-            
+
         )
     }
 

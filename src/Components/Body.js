@@ -20,6 +20,7 @@ const Body = () => {
             {isMobile ?
             "":      
             <>
+            <header>
             <div className="bodyContainer1" >
                 <nav>
                 <ul>
@@ -31,6 +32,7 @@ const Body = () => {
                 </nav>
                 <ContactInfo/>
                 </div>
+            </header>
             </>}
 
 
