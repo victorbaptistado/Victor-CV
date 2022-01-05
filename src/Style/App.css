@@ -118,7 +118,6 @@ span {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding-bottom: 3rem;
   height: auto;
   border-radius: 0 0 1rem 0;
   background-color: rgba(255, 196, 0, 0.808);
@@ -127,12 +126,21 @@ span {
 .mobileContact .closeContacts {
   background-color: rgba(165, 83, 24, 0.459);
   width: 100%;
-  padding: 3% 0%;
+  padding: 5%;
   border: red;
 }
 
-.mobileContact .mobileContactIcon {
+.mobileContact .mobileContactSection {
+  margin-left: 5%;
+  padding: 3rem 5rem 4rem 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.mobileContact .mobileContactSection .mobileContactIcon {
   width: 4rem;
+  margin-top: 2rem;
 }
 
 .menuActive {

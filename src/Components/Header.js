@@ -1,11 +1,10 @@
 import {React, useState, useEffect } from 'react';
+import {useSpring, animated} from "react-spring";
 import profilePic from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/Profile-Pic.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisV, faChevronCircleUp, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import useMediaQuery from "./Hooks/useMediaQuery";
 import SkillsIcons from './BodyComponents/SkillsIcons';
-
-
 import linkedinIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/linkedin-icon.png";
 import phoneIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/phone-call.png";
 import emailIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/email.png";
@@ -21,7 +20,15 @@ const Header = () => {
 
     const [menuActive, setMenuActive] = useState("");
     const [mobileContact, setMobileContact] = useState("")
-    const [opacity, setOpacity] = useState(0);
+    const [opacity, setOpacity] = useState(useSpring({
+        from: {opacity: 0},
+        to: [{opacity: 1},
+
+        ],
+        config: {duration: 1000}
+    }
+
+    ));
     
   
   /*  const [transition, setTransition] = useState(       
@@ -31,9 +38,10 @@ const Header = () => {
 
     function handleContacts () {
         setMobileContact(         
-        <div style={{opacity:`${opacity}`}} className='mobileContact' >
+        <animated.div style={opacity} className='mobileContact' >
         <button className='closeContacts' onClick={()=>setMobileContact("")}><FontAwesomeIcon icon={faChevronCircleUp}/></button>
  
+        <div className='mobileContactSection'>
         <img className="mobileContactIcon" src={linkedinIcon} /><a target="_blank" href="https://www.linkedin.com/in/vicbaptista/" ><h2><span> /victorbaptistado</span></h2></a>
  
         <img className="mobileContactIcon" src={phoneIcon} /><h2><span>07532-654137</span></h2>
@@ -43,19 +51,12 @@ const Header = () => {
         <img className="mobileContactIcon" src={locationIcon}/><h2><span>United Kingdom, London</span></h2>
 
         <img className="mobileContactIcon" src={githubIcon}/><a target="_blank" href="https://github.com/victorbaptistado"><h2><span> /victorbaptistado</span></h2></a>
-
         </div>
+        </animated.div>
 
         )
     }
-    useEffect(() => {
 
-        setOpacity(
-        function handleMenu(){
-         return 1;
-        })  
-        },[()=>handleMenu()]);
-    
 
 
 
