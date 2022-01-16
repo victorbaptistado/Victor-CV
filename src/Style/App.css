@@ -58,8 +58,26 @@ nav li {
   list-style-type: none;
 }
 
-a {
+nav a {
   text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+  margin-top: 2rem;
+}
+
+ul li a {
+  color: white;
+}
+
+ul li a:visited {
+  color: #00804f;
+}
+
+ul li .wordpressList {
+  font-size: 2rem;
+  margin-left: 2rem;
 }
 
 p {
@@ -126,7 +144,7 @@ span {
   width: fit-content;
   height: auto;
   border-radius: 0 0 1rem 0;
-  background-color: rgba(255, 196, 0, 0.808);
+  background-color: rgba(255, 196, 0, 0.904);
 }
 
 .mobileContact .closeContacts {
@@ -142,6 +160,7 @@ span {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  text-align: left;
 }
 
 .mobileContact .mobileContactSection .mobileContactIcon {
@@ -152,8 +171,6 @@ span {
 .menuActive {
   position: absolute;
   width: 100%;
-  -webkit-transition: 1s ease 0.3s;
-  transition: 1s ease 0.3s;
 }
 
 .menuActive .closeMenu {

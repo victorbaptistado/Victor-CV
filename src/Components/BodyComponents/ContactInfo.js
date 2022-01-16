@@ -47,9 +47,6 @@ const ContactInfo = () => {
     }
     ];
     
-    
-    
-        
 
     const visible = () =>
     setContactInfo (
@@ -65,8 +62,6 @@ const ContactInfo = () => {
         
         </ul>       
     ))
-    
-    
     
 
     return (

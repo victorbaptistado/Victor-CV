@@ -52,10 +52,26 @@ nav {
     color: silver;
     list-style-type: none;
   }
+  a {
+    text-decoration: none;
+  }
 }
 
-a {
-  text-decoration: none;
+ul {
+  li {
+    list-style-type: none;
+    margin-top: 2rem;
+    a {
+      color: white;
+    }
+    a:visited {
+      color: rgb(0, 128, 79);
+    }
+    .wordpressList {
+      font-size: 2rem;
+      margin-left: 2rem;
+    }
+  }
 }
 
 p {
@@ -112,7 +128,7 @@ span {
   width: fit-content;
   height: auto;
   border-radius: 0 0 1rem 0;
-  background-color: rgba(255, 196, 0, 0.808);
+  background-color: rgba(255, 196, 0, 0.904);
   .closeContacts {
     background-color: rgba(165, 83, 24, 0.459);
     width: 100%;
@@ -123,6 +139,7 @@ span {
     margin-left: 5%;
     padding: 3rem 5rem 4rem 0;
     width: fit-content;
+    text-align: left;
     .mobileContactIcon {
       width: 4rem;
       margin-top: 2rem;
@@ -133,7 +150,6 @@ span {
 .menuActive {
   position: absolute;
   width: 100%;
-  transition: 1s ease 0.3s;
   .closeMenu {
     margin: 0%;
     background-color: rgb(165, 83, 24);

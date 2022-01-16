@@ -56,12 +56,13 @@ Bellow is a piece I worked on - recording audio & mixing | video recording & edi
 That's where my webdev Journey started:
 making websites for texts I wrote & for my band.
 Here are a few websites I made:`}</p>
-    <br/>
+ 
   
-    <a href="https://kimbowraider.com/" target="_blank">  <img width="50px" src={wordpressIcon}/>Kimbow Raider's website</a>
-    <br/><br/>
-    <a href="https://victorfugagnoli.blogspot.com/" target="_blank"> <img width="50px" src={wordpressIcon}/>Victor Fugagnoli's website</a>
-    
+    <ul>
+    <li><a href="https://kimbowraider.com/" target="_blank" className='wordpressList'>  <img width="20px" src={wordpressIcon}/>Kimbow Raider's website</a></li>
+    <li><a href="https://victorfugagnoli.blogspot.com/" target="_blank" className='wordpressList'> <img width="20px" src={wordpressIcon}/>Victor Fugagnoli's website</a></li>
+    </ul>
+
     </>
     },
     {
