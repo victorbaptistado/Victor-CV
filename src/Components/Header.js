@@ -2,7 +2,7 @@ import {React, useState, useEffect } from 'react';
 import {useSpring, animated} from "react-spring";
 import profilePic from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/Profile-Pic.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEllipsisV, faChevronCircleUp, faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { faEllipsisV, faChevronCircleUp, faUserCircle, faBars } from '@fortawesome/free-solid-svg-icons';
 import useMediaQuery from "./Hooks/useMediaQuery";
 import SkillsIcons from './BodyComponents/SkillsIcons';
 import linkedinIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/linkedin-icon.png";
@@ -19,8 +19,12 @@ const Header = () => {
     const isMobile = useMediaQuery('(max-width: 960px)');
 
     const [menuActive, setMenuActive] = useState("");
-    const [mobileContact, setMobileContact] = useState("")
-    const [opacity, setOpacity] = useState(useSpring({
+    const [mobileContact, setMobileContact] = useState("");
+
+
+
+    /*
+    const [animOpacity, setAnimOpacity] = useState(useSpring({
         from: {opacity: 0},
         to: 
             {opacity: 1},
@@ -28,7 +32,7 @@ const Header = () => {
         config: [{duration: 2000}]
     }
 
-    ));
+    ));*/
     
   
   /*  const [transition, setTransition] = useState(       
@@ -38,7 +42,7 @@ const Header = () => {
 
     function handleContacts () {
         setMobileContact(         
-        <animated.div style={opacity} className='mobileContact' >
+        <animated.div /*style={animOpacity}*/ className='mobileContact' >
         <button className='closeContacts' onClick={()=>setMobileContact("")}><FontAwesomeIcon icon={faChevronCircleUp}/></button>
  
         <div className='mobileContactSection'>
@@ -63,7 +67,7 @@ const Header = () => {
     function handleMenu () {
         setMenuActive(         
         <header>
-        <div style={{opacity:`${opacity}`}} className='menuActive' >
+        <div /*style={{opacity:`${animOpacity}`}}*/ className='menuActive' >
         <nav>
         <ul>
         <button className='closeMenu' onClick={()=>setMenuActive("")}><FontAwesomeIcon icon={faChevronCircleUp}/></button>
@@ -96,7 +100,7 @@ const Header = () => {
         <h4>Victor</h4>
 
         <button onClick={()=>handleMenu()} className='menuTrigger'>
-        <FontAwesomeIcon icon={faEllipsisV}/>
+        <FontAwesomeIcon icon={faBars}/>
         </button>
         </div></> : ""}
 

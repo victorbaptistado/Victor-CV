@@ -124,16 +124,20 @@ span {
   width: fit-content;
   text-align: left;
   font-size: 4rem;
-  color: rgba(243, 188, 162, 0.979);
+  color: rgba(168, 185, 183, 0.979);
+  -webkit-transition: linear 1s;
+  transition: linear 1s;
 }
 
 .headerMobile .menuTrigger {
   margin-top: 15%;
-  width: 50%;
+  width: 70px;
   padding: 0%;
+  font-size: 2.7rem;
   margin-left: 80%;
   border-radius: 1rem;
-  background-color: rgba(243, 188, 162, 0.979);
+  background-color: transparent;
+  color: white;
 }
 
 .mobileContact {
@@ -145,16 +149,18 @@ span {
   height: auto;
   border-radius: 0 0 1rem 0;
   background-color: rgba(255, 196, 0, 0.904);
+  -webkit-transition: width 1s linear;
+  transition: width 1s linear;
 }
 
-.mobileContact .closeContacts {
+.closeContacts {
   background-color: rgba(165, 83, 24, 0.459);
   width: 100%;
   padding: 5%;
   border: red;
 }
 
-.mobileContact .mobileContactSection {
+.mobileContactSection {
   margin-left: 5%;
   padding: 3rem 5rem 4rem 0;
   width: -webkit-fit-content;
@@ -163,7 +169,7 @@ span {
   text-align: left;
 }
 
-.mobileContact .mobileContactSection .mobileContactIcon {
+.mobileContactSection .mobileContactIcon {
   width: 4rem;
   margin-top: 2rem;
 }
@@ -185,21 +191,14 @@ span {
   color: rgba(255, 0, 0, 0.527);
 }
 
-.menuActive .closeMenu :focus {
-  color: red;
-}
-
 .menuActive .mobileButtons {
   border: rgba(255, 0, 0, 0.185);
   border-style: solid;
   border-width: 1px;
+  margin: 0%;
   font-size: 3rem;
   padding: 15% 0% 15% 0%;
   background-color: rgba(210, 105, 30, 0.966);
-}
-
-.menuActive .mobileButtons :focus {
-  color: red;
 }
 
 .headerWrapper {
