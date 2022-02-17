@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.53055094.chunk.css",
-    "main.js": "/static/js/main.305e4d3a.chunk.js",
-    "main.js.map": "/static/js/main.305e4d3a.chunk.js.map",
+    "main.js": "/static/js/main.3801298f.chunk.js",
+    "main.js.map": "/static/js/main.3801298f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.92645e7f.js",
     "runtime-main.js.map": "/static/js/runtime-main.92645e7f.js.map",
     "static/js/2.53e7f6aa.chunk.js": "/static/js/2.53e7f6aa.chunk.js",
@@ -15,6 +15,7 @@
     "static/media/Profile-Pic.62e0dfe0.png": "/static/media/Profile-Pic.62e0dfe0.png",
     "static/media/adobe-photoshop-icon.a82e87ab.png": "/static/media/adobe-photoshop-icon.a82e87ab.png",
     "static/media/adobe-premiere-icon.883ba82d.jpg": "/static/media/adobe-premiere-icon.883ba82d.jpg",
+    "static/media/coffee-icon2.16dc56ec.png": "/static/media/coffee-icon2.16dc56ec.png",
     "static/media/css3-icon.8586db58.png": "/static/media/css3-icon.8586db58.png",
     "static/media/email.67bda941.png": "/static/media/email.67bda941.png",
     "static/media/github-1.a2ddb23e.png": "/static/media/github-1.a2ddb23e.png",
@@ -33,6 +34,6 @@
     "static/js/runtime-main.92645e7f.js",
     "static/js/2.53e7f6aa.chunk.js",
     "static/css/main.53055094.chunk.css",
-    "static/js/main.305e4d3a.chunk.js"
+    "static/js/main.3801298f.chunk.js"
   ]
 }

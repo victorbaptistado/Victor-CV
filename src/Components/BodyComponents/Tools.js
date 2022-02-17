@@ -11,7 +11,7 @@ const Tools = ({id, title}) => {
     const [texts, setText] = useState([
     {
     about: <>
-    <p>Some tools I'm currently familiar with:</p>
+    <p>Tools I'm currently familiar with:</p>
     <br/><br/>
     <SkillsIcons/>
     </>
@@ -20,7 +20,7 @@ const Tools = ({id, title}) => {
     react: 
     <>
     <h3>React & Javascript</h3>
-    <p>{`It's been a while since I started to use them to create dynamic websites. 
+    <p>{`It's been a while since I started to use Javascript to create dynamic websites. 
 React is the Javascript library I'm using the most - 
 where my coding's journey is currently heading towards.
 Like a hermit, I spend hours devoted to it. Me & my coffee. I love it!`}</p>

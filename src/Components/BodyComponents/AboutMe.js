@@ -45,7 +45,6 @@ A list of some of my hobbies: Reading, Writing, Singing, Guitar, Acting, Directi
             {texts.map(text =>
             <div>
             <p>{text.currently}</p>
-    
             <p>{text.about}</p>
             <p>{text.objective}</p>
             <p>{text.hobbies}</p>

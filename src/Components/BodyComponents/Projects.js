@@ -1,5 +1,6 @@
 import {React, useState} from 'react';
 import onesoulIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/one-soul-icon.png";
+import coffeIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/coffee-icon2.png";
 import oneSoulAppImage from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/one-soul-app-image.PNG";
 
 
@@ -9,7 +10,11 @@ const Projects = ({id, title}) => {
     
 const [texts, setText] = useState([
     {
-    about:<>{`Self-Development is a subject I find essencial - to optimize life's learning process and grow-up healthier, centered, more productive and happier. 
+    about:<>
+<h3>Self-Development App</h3>
+
+<img className="oneSoulAppImage" src={oneSoulAppImage}/>
+{`Self-Development is a subject I find essencial - to optimize life's learning process and grow-up healthier, centered, more productive and happier. 
 My interests dive deep, as I love to read different books about it, acquiring knowhow enought to attempt my first app on the subject.  
 
 It's still on Demo version. In there I'll suggest series of challenges to make the user learn by the best way: concept & practice.
@@ -17,13 +22,22 @@ It's still on Demo version. In there I'll suggest series of challenges to make t
 I'm using Html, Css & React.js.
 You can try the app clicking the icon below: `}
     <br/>
+    
 <a target="_blank" href="https://one-soul-academy.netlify.app/">
 <img width="50px" src={onesoulIcon}/></a></>
 },
+{
+about:<>
+<h3>Coffee-Shop Website</h3>
+{`I'm currently working on a website for a Brazilian coffee-shop. 
+Here I'm using simple vanilla Javascript.
 
-
-
-
+You can try the app clicking the icon below: `}
+    <br/>
+<a target="_blank" href="https://coffee-lynx.netlify.app/index.html">
+<img width="50px" src={coffeIcon}/></a>
+    </>
+},
 
 ]);
 
@@ -38,9 +52,10 @@ You can try the app clicking the icon below: `}
 
             {texts.map(text =>
             <>
-            <img className="oneSoulAppImage" src={oneSoulAppImage}/>
-            <p >{text.about}</p>
-
+          
+            <p>{text.about}</p>
+            <br/>
+            <hr/>
             <br/>
 
             </>
