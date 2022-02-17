@@ -21,7 +21,7 @@ I'm currently developing my own application on Self-Development and my youtube c
     </>},
     {
     objective: <><FontAwesomeIcon className="aboutIcon" icon={faBullseye} style={{color: "red"}}/>
-I'm aspiring an opportunity to collaborate on a project as apprentice, to be challenged so to develop my skills.
+I'm aspiring an opportunity to collaborate on a project as apprentice, to be challenged so to develop my skills and to build my carrer in an exciting company.
     </>},
     {
     hobbies: <><FontAwesomeIcon className="aboutIcon" icon={faUmbrellaBeach} style={{color:"deepskyblue"}}/>
