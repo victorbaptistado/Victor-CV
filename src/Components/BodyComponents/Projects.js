@@ -49,7 +49,7 @@ Here I'm using simple vanilla Javascript.
 
 You can try the website clicking the icon below: `}
     <br/>
-<a target="_blank" href="https://coffee-lynx.netlify.app/index.html">
+<a target="_blank" href="https://borsoicafe.netlify.app/">
 <img width="50px" src={coffeIcon}/></a>
     </>
 },
