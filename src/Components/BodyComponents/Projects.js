@@ -31,7 +31,7 @@ You can try the app clicking the icon below: `}
 {
     about:<>
     <h3>Hospitality Website</h3>
-    {`Since 2020 I was working as a freelancer, helping to maintain The Rishing's website, a recruitment company that finds workers for hospitality jobs.
+    {`I was working as a freelancer, helping to maintain The Rishing's website, a recruitment company that finds workers for hospitality jobs.
 This website has been upgraded many times throughout the years.
 
 You can try the app clicking the icon below: `}
