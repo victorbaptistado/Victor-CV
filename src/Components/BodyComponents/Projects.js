@@ -45,7 +45,7 @@ You can try the app clicking the icon below: `}
 about:<>
 <h3>Coffee-Shop Website</h3>
 {`I'm currently developing a website for a Brazilian coffee-shop, working as a freelancer. 
-Here I'm using simple vanilla Javascript.
+Here I'm using Typescript.
 
 You can try the website clicking the icon below: `}
     <br/>

@@ -1,6 +1,7 @@
 import React from 'react';
 import reactIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/react-icon.png";
 import javascriptIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/javascript-icon.png";
+import typescriptIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/typescript-icon.png";
 import htmlIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/html5-icon.png";
 import cssIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/css3-icon.png";
 import wordpressIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/wordpress-icon.png";
@@ -13,8 +14,9 @@ const SkillsIcons = () => {
     return (
         <div>
             <div className="iconsRow">
-            <img className="toolIcon" src={reactIcon}></img>
             <img className="toolIcon" src={javascriptIcon}></img>
+            <img className="toolIcon" src={reactIcon}></img>
+            <img className="toolIcon" src={typescriptIcon}></img>
             <img className="toolIcon" src={htmlIcon}></img>
             <img className="toolIcon" src={cssIcon}></img>
             <img className="toolIcon" src={wordpressIcon}></img>

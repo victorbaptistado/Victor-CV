@@ -19,11 +19,10 @@ const Tools = ({id, title}) => {
     {
     react: 
     <>
-    <h3>React & Javascript</h3>
+    <h3>Javascript / React.js / Typescript</h3>
     <p>{`It's been a while since I started to use Javascript to create dynamic websites. 
-React is the Javascript library I'm using the most - 
-where my coding's journey is currently heading towards.
-Like a hermit, I spend hours devoted to it. Me & my coffee. I love it!`}</p>
+React is the library I use (this CV-website was built with it), and Typescript is the latest language I'm diving into. 
+Like a hermit, I spend hours devoted to it. Me & my coffee. I love it.`}</p>
     </>
     },
     {
