@@ -29,19 +29,6 @@ You can try the app clicking the icon below: `}
 },
 
 {
-    about:<>
-    <h3>Hospitality Website</h3>
-    {`I was working as a freelancer, helping to maintain The Rishing's website, a recruitment company that finds workers for hospitality jobs.
-This website has been upgraded many times throughout the years.
-
-You can try the app clicking the icon below: `}
-        <br/>
-    <a target="_blank" href="https://therishing.co.uk/about-us/">
-    <img width="50px" src={risingIcon}/></a>
-        </>
-    },
-
-{
 about:<>
 <h3>Coffee-Shop Website</h3>
 {`I'm currently developing a website for a Brazilian coffee-shop, working as a freelancer. 
