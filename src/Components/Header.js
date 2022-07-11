@@ -12,48 +12,24 @@ import githubIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Ima
 import locationIcon from "/Users/Victor/Documents/PROGRAMMING/CV/victor-cv/src/Image/location-pin.png";
 
 
-
-
 const Header = () => {
 
     const isMobile = useMediaQuery('(max-width: 960px)');
-
     const [menuActive, setMenuActive] = useState("");
     const [mobileContact, setMobileContact] = useState("");
-
-
-
-    /*
-    const [animOpacity, setAnimOpacity] = useState(useSpring({
-        from: {opacity: 0},
-        to: 
-            {opacity: 1},
-        
-        config: [{duration: 2000}]
-    }
-
-    ));*/
-    
-  
-  /*  const [transition, setTransition] = useState(       
-    "1s ease 0.3s"
-    );*/
- 
 
     function handleContacts () {
         setMobileContact(         
         <animated.div /*style={animOpacity}*/ className='mobileContact' >
         <button className='closeContacts' onClick={()=>setMobileContact("")}><FontAwesomeIcon icon={faChevronCircleUp}/></button>
- 
         <div className='mobileContactSection'>
-        <img className="mobileContactIcon" src={linkedinIcon} /><a target="_blank" href="https://www.linkedin.com/in/vicbaptista/" ><h2><span> /victorbaptistado</span></h2></a>
- 
+        <img className="mobileContactIcon" src={linkedinIcon} />
+            <a target="_blank" href="https://www.linkedin.com/in/vicbaptista/" >
+                <h2><span> /victorbaptistado</span></h2>
+            </a>
         <img className="mobileContactIcon" src={phoneIcon} /><h2><span>07532-654137</span></h2>
-
         <img className="mobileContactIcon" src={emailIcon}/> <h2><span>victorbaptistado@gmail.com</span></h2>
- 
         <img className="mobileContactIcon" src={locationIcon}/><h2><span>United Kingdom, London</span></h2>
-
         <img className="mobileContactIcon" src={githubIcon}/><a target="_blank" href="https://github.com/victorbaptistado"><h2><span> /victorbaptistado</span></h2></a>
         </div>
         </animated.div>

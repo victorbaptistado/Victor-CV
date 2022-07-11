@@ -6,9 +6,9 @@ import Body from  './Components/Body';
 function App() {
   return (
     <>
-   <Header/>
-   <Body/>
-</>
+      <Header/>
+      <Body/>
+    </>
   )}
 
 export default App;

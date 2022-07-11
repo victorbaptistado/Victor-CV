@@ -2,22 +2,31 @@ import {React, useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBullseye,faUmbrellaBeach, faPlay } from '@fortawesome/free-solid-svg-icons';
 
-const AboutMe = ({id, title}) => {
-
-     
+const AboutMe = ({id, title}) => {  
     
-const [texts, setText] = useState([
+const [texts] = useState([
     {
-    about: `Welcome to my personal website! 
-I'm a Web Developer hermit who loves to burn my neurones writing code & solving problems. 
-I appreciate both conditions of the coding journey: solitude & team work.
-
-My proficient computer languages: React.js / Javascript.
-I'm aspiring to have my first apprenticeship in the field.`
+    about: 
+        <div>
+            <div>
+                <text> 
+                    Welcome to my personal website! 
+                    I'm a Web Developer hermit who loves to burn my neurones writing code & solving problems. 
+                    I appreciate both conditions of the coding journey: solitude & team work.
+                </text>
+            </div>
+            <div style={{marginTop: 20}}>
+                <text>I'm a Web Developer with commercial aspiring an apprenticeship opportunity. 
+                    My goal is to build a carreer in a friendly and exciting company.
+                    My proficient computer languages are: React.js & React Native / Javascript.
+                    My goal is to build a carreer in a friendly and exciting company.
+                </text>
+            </div>
+        </div>
     },
     {
     currently: <><FontAwesomeIcon className="aboutIcon" icon={faPlay} style={{color: "green"}}/>
-I'm currently developing my own application on Self-Development and my youtube channel on WebDev coding.
+I'm currently in various commercial projects, also developing my own application on Self-Development and my youtube channel on WebDev coding.
     </>},
     {
     objective: <><FontAwesomeIcon className="aboutIcon" icon={faBullseye} style={{color: "red"}}/>
@@ -29,14 +38,9 @@ A list of some of my hobbies: Reading, Writing, Singing, Guitar, Acting, Directi
     </>
     }
 
-
-
 ]);
 
-
-
     return ( 
- 
         <div className="sectionContainer" id={id}>
             <h1>{title}</h1>
             <section>
@@ -55,13 +59,9 @@ A list of some of my hobbies: Reading, Writing, Singing, Guitar, Acting, Directi
                   <br/>
                <hr/>
             </section>
-        </div>
-
-        
+        </div>   
     )
 }
-
-    
-
+  
 
 export default AboutMe

@@ -9,7 +9,6 @@ import { faMinusCircle, faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 
 const ContactInfo = () => {
 
-
     const [contactInfo, setContactInfo] = useState("")
 
     const contact =
@@ -47,52 +46,39 @@ const ContactInfo = () => {
     }
     ];
     
-
     const visible = () =>
     setContactInfo (
         contact.map(contact=> 
-      
-        <ul>
-
-        {contact.linkedin}        
-        {contact.phone}
-        {contact.email}
-        {contact.location}
-        {contact.github}
-        
-        </ul>       
-    ))
-    
+            <ul>
+                {contact.linkedin}        
+                {contact.phone}
+                {contact.email}
+                {contact.location}
+                {contact.github}    
+            </ul>       
+    ))   
 
     return (
-     
         <aside>
-        <div className="contactsWrapper">
-
-        <p style={{fontSize:"1.5rem", height:"auto"}}>Contact Info</p>
-        <section>
-
-        {contactInfo ? 
-        <div>
-        <button onClick={() => setContactInfo("")}> 
-
-        <FontAwesomeIcon icon={faMinusCircle} style={{color: "black"}}/>
-        </button>
-        </div>
-        :
-        <div> 
-        <button onClick={() => visible()}> 
-        <FontAwesomeIcon icon={faPlusCircle} style={{color: "black"}}/>
-        </button>
-        </div>
-
-        }      
-
-        {contactInfo}
-
-        </section>
-        </div>
-        
+            <div className="contactsWrapper">
+                <p style={{fontSize:"1.5rem", height:"auto"}}>Contact Info</p>
+                <section>
+                    {contactInfo ? 
+                    <div>
+                        <button onClick={() => setContactInfo("")}> 
+                            <FontAwesomeIcon icon={faMinusCircle} style={{color: "black"}}/>
+                        </button>
+                    </div>
+                    :
+                    <div> 
+                        <button onClick={() => visible()}> 
+                            <FontAwesomeIcon icon={faPlusCircle} style={{color: "black"}}/>
+                        </button>
+                    </div>
+                    }      
+                    {contactInfo}
+                </section>
+            </div>
         </aside>
 
     )
