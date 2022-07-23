@@ -12,11 +12,11 @@ const [texts] = useState([
                 <text> 
                     Welcome to my personal website! 
                     I'm a Web Developer hermit who loves to burn my neurones writing code & solving problems. 
-                    I appreciate both conditions of the coding journey: solitude & team work.
+                    I appreciate both conditions of the coding's journey: solitude & team work.
                 </text>
             </div>
             <div style={{marginTop: 20}}>
-                <text>I'm a Web Developer with commercial aspiring an apprenticeship opportunity. 
+                <text>I'm a developer with commercial experience aspiring an apprenticeship opportunity. 
                     My goal is to build a carreer in a friendly and exciting company.
                     My proficient computer languages are: React.js & React Native / Javascript.
                     My goal is to build a carreer in a friendly and exciting company.

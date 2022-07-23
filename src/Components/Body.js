@@ -10,13 +10,8 @@ const Body = () => {
 
     const isMobile = useMediaQuery('(max-width: 960px)');
 
-
     return (
-        <div className="bodyWrapper"> 
-        
-            {/* ---- CONTAINER 1 / NAVIGATION ---- */}
-
-    
+        <div className="bodyWrapper">  
             {isMobile ?
             "":      
             <>
@@ -35,21 +30,12 @@ const Body = () => {
             </header>
             </>}
 
-
-
-
-            {/* ---- CONTAINER 2 ---- */}
-
-            <div className="bodyContainer2" >
-                
+            <div className="bodyContainer2" >        
                 <AboutMe id="aboutMe" title={"ABOUT"}/>         
                 <Tools id="tools" title={"TOOLS"}/>
                 <YoutubeChannel id="youtubeChannel" title={"YOUTUBE CHANNEL"}/>
                 <Projects id="projects" title={"PROJECTS"}/>  
-
             </div>
-
-
         </div>      
     )
 }
